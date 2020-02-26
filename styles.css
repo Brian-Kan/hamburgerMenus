@@ -1,0 +1,71 @@
+body {
+    background-color: #273c75;
+    font-family: Comfortaa;
+}
+
+/* ================================== */
+/* Navigation 1 styling */
+/* ================================== */
+.navigation_checkbox {
+    display: none;
+}
+
+/* Navigation button that you click. By default, it is a white circle. */
+.navigation_button {
+    background-color: #dfe6e9;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+/* navigation_background is the GREEN background that pops out from behind the hamburger menu */
+.navigation_background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(#55efc4, #00b894);
+    z-index: 10;
+
+    /* When the navigation is in use, transform: scale expands the green background */
+    transform: scale(80);
+}
+
+.navigation_nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+}
+
+.navigation_list {
+    /* This part centers the list */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    list-style: none;
+    text-align: center;
+}
+
+.navigation_item {
+    margin: 1rem;
+}
+
+/* The actual options to choose from in the nav */
+.navigation_link {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
